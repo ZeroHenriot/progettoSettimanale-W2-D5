@@ -115,9 +115,36 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
 
+let count = 0
+while (numericArray[count] !== numericArray[14]) {
+  console.log(numericArray[count])
+  count++
+}
+
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ['g', 'n', 'u', 'z', 'd']
+let letterNumber = []
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case 'g':
+      letterNumber.push(7)
+      break
+    case 'n':
+      letterNumber.push(14)
+      break
+    case 'u':
+      letterNumber.push(21)
+      break
+    case 'z':
+      letterNumber.push(26)
+      break
+    case 'd':
+      letterNumber.push(4)
+      break
+  }
+}
+console.log(letterNumber)
